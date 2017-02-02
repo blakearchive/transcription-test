@@ -24,4 +24,4 @@ python run.py
 ```
 Site is available at localhost:8002
 
-to use: copy and paste the transcription xml (from <phystext> to </phystext>) into the text box and press submit. 
+to use: copy and paste the transcription xml (from \<phystext\> to \</phystext\>) into the text box and press submit. 
