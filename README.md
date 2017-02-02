@@ -5,7 +5,8 @@
 open terminal
 ```
 sudo easy_install pip
-*when you are prompted for a password, type in the admin password for your Mac (you won't see it as you type)
+  *when you are prompted for a password, type in the admin password for 
+  your Mac and press return (you won't see the password as you type)
 sudo pip install flask
 sudo pip install lxml
 mkdir ~/Sites
