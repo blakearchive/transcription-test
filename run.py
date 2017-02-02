@@ -23,7 +23,7 @@ def show_form(xml=None,xmlInput=None):
     return render_template('index.html', xml=xml, xmlInput=xmlInput);
 
 def transform(xml):
-    xslt_xml = etree.parse(open("xsl/transcription.xsl"))
+    xslt_xml = etree.parse(app.open_resource("xsl/transcription.xsl"))
     transform = etree.XSLT(xslt_xml)
     tree = etree.fromstring(xml)
     return etree.tostring(transform(tree))
