@@ -4,9 +4,9 @@
 
 open terminal
 ```
-easy_install pip
-pip install flask
-pip install lxml
+sudo easy_install pip
+sudo pip install flask
+sudo pip install lxml
 mkdir ~/Sites
 cd ~/Sites
 git clone https://github.com/blakearchive/transcription-test.git dtp
