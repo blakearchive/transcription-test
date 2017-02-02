@@ -17,7 +17,7 @@ python run.py
 ```
 Site is available at localhost:8002
 
-## Subserquent use
+## Subsequent use
 ```
 cd ~/Sites/dtp
 python run.py
