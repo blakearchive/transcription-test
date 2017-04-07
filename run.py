@@ -1,5 +1,4 @@
 from flask import Flask
-from flask import url_for
 from flask import render_template
 from flask import request
 from lxml import etree
@@ -19,11 +18,13 @@ def index():
         xml = transform(xmlInput)
     return show_form(xml,xmlInput)
 
+
 def show_form(xml=None,xmlInput=None):
     return render_template('index.html', xml=xml, xmlInput=xmlInput);
 
+
 def transform(xml):
-    xslt_xml = etree.parse(app.open_resource("xsl/transcription.xsl"))
+    xslt_xml = etree.parse(open("xslt/transcription.xsl"))
     transform = etree.XSLT(xslt_xml)
     tree = etree.fromstring(xml)
     return etree.tostring(transform(tree))
