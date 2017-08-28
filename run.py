@@ -27,7 +27,7 @@ def transform(xml):
     xslt_xml = etree.parse(open("xslt/transcription.xsl"))
     transform = etree.XSLT(xslt_xml)
     tree = etree.fromstring(xml)
-    return etree.tostring(transform(tree))
+    return etree.tostring(transform(tree), encoding='unicode')
 
 
 if __name__ == "__main__":
